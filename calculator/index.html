@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator — HTML & CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Calculator">
+    <div class="brand">Calculator <span></span></div>
+
+    <div class="display" aria-live="polite">
+      <div class="expression" id="expr"> </div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <div class="keys" role="group" aria-label="Calculator keys">
+      <button class="key clear" type="button" aria-label="clear">C</button>
+      <button class="key" type="button" aria-label="plus minus">±</button>
+      <button class="key" type="button" aria-label="percent">%</button>
+      <button class="key operator" type="button" aria-label="divide">÷</button>
+
+      <button class="key" type="button" aria-label="seven">7</button>
+      <button class="key" type="button" aria-label="eight">8</button>
+      <button class="key" type="button" aria-label="nine">9</button>
+      <button class="key operator" type="button" aria-label="multiply">×</button>
+
+      <button class="key" type="button" aria-label="four">4</button>
+      <button class="key" type="button" aria-label="five">5</button>
+      <button class="key" type="button" aria-label="six">6</button>
+      <button class="key operator" type="button" aria-label="minus">−</button>
+
+      <button class="key" type="button" aria-label="one">1</button>
+      <button class="key" type="button" aria-label="two">2</button>
+      <button class="key" type="button" aria-label="three">3</button>
+      <button class="key operator" type="button" aria-label="plus">+</button>
+
+      <button class="key zero" type="button" aria-label="zero">0</button>
+      <button class="key" type="button" aria-label="decimal">.</button>
+      <button class="key equals" type="button" aria-label="equals">=</button>
+    </div>
+
+    <div class="hint">HTML + CSS only UI — press keys visually. Add JavaScript for calculation logic.</div>
+  </main>
+  
+</body>
+<script src="app.js"></script>
+
+</html>
