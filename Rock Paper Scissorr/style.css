@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+h1 {
+    color: white;
+    background-color: #081b31;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.choice:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6);
+}
+
+.scores {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-score, #comp-score {
+    font-size: 3rem;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 80px;
+    text-align: center;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+#msg:hover {
+    box-shadow: 0 0 10px 2px #00f;
+}
+
+/* 🔁 Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .choices {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .scores {
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choices {
+        gap: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+    }
+}
